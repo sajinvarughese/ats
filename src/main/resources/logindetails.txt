@@ -1,0 +1,14 @@
+Test Login Credentials
+----------------------
+
+User login
+--------------------
+sajinvarughese@gmail.com
+varughese
+
+
+Admin Login
+------------------
+admin@hirrr.com
+hirrr@123
+

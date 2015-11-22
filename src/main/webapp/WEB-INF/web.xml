@@ -1,0 +1,120 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+          http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+    version="3.0">
+    <servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>org.ats.java.servlet.RegisterServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>org.ats.java.servlet.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+		 <servlet>
+		<servlet-name>SignOutServlet</servlet-name>
+		<servlet-class>org.ats.java.servlet.SignOutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SignOutServlet</servlet-name>
+		<url-pattern>/signout</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+		<servlet-name>UserActivation</servlet-name>
+		<servlet-class>org.ats.java.servlet.UserActivation</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserActivation</servlet-name>
+		<url-pattern>/ActivateUser</url-pattern>
+	</servlet-mapping>	
+	
+	 <servlet>
+		<servlet-name>JobPostServlet</servlet-name>
+		<servlet-class>org.ats.java.servlet.JobPostServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>JobPostServlet</servlet-name>
+		<url-pattern>/PostJob</url-pattern>
+	</servlet-mapping>	
+
+	 <servlet>
+		<servlet-name>FetchPostedJobsServlet</servlet-name>
+		<servlet-class>org.ats.java.servlet.FetchPostedJobsServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FetchPostedJobsServlet</servlet-name>
+		<url-pattern>/fetchJobs</url-pattern>
+	</servlet-mapping>		
+	
+	<servlet>
+		<servlet-name>DeletePostedJobServlet</servlet-name>
+		<servlet-class>org.ats.java.servlet.DeletePostedJobServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeletePostedJobServlet</servlet-name>
+		<url-pattern>/deleteJob</url-pattern>
+	</servlet-mapping>	
+		
+	<servlet>
+		<servlet-name>SingleJobDetailServlet</servlet-name>
+		<servlet-class>org.ats.java.servlet.SingleJobDetailServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SingleJobDetailServlet</servlet-name>
+		<url-pattern>/jobDetails</url-pattern>
+	</servlet-mapping>		
+	
+	<servlet>
+		<servlet-name>ApproveJobsServlet</servlet-name>
+		<servlet-class>org.ats.java.servlet.ApproveJobsServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ApproveJobsServlet</servlet-name>
+		<url-pattern>/approveJobs</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+		<servlet-name>DenyJobServlet</servlet-name>
+		<servlet-class>org.ats.java.servlet.DenyJobServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DenyJobServlet</servlet-name>
+		<url-pattern>/denyJob</url-pattern>
+	</servlet-mapping>	
+
+	<servlet>
+		<servlet-name>ConfirmJobServlet</servlet-name>
+		<servlet-class>org.ats.java.servlet.ConfirmJobServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ConfirmJobServlet</servlet-name>
+		<url-pattern>/confirmJob</url-pattern>
+	</servlet-mapping>		
+	
+	
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+ 
+</web-app>
